@@ -1,0 +1,181 @@
+/*base frame settings*/
+#mainframe { 
+  font-family: 'Roboto', sans-serif;  
+}
+/*Header default settings*/
+.mainHeader {
+  padding: 5px;
+}
+.mainHeader img{
+  margin-bottom: 20px;
+}
+.mainHeaderLink {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.mainHeaderMenu {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*Header menubar settings*/
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255); 
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  outline: none;
+  border:none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  font-family: inherit;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  margin: 0;
+}
+
+.subnavbtn {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.subnavbtn:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: crimson;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.subnavbtn:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: crimson;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(255, 255, 255);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(255, 255, 255);  
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+  
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+/***************/
+.mainHeaderLogo img{
+  height: auto;
+}
+
+.mainFooter{
+  margin-top: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.FormInput {
+  outline: none;
+  border: 0.5px solid lightslategray;
+  color: rgb(0, 0, 0);
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: inherit;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.formTable{
+  border-collapse: collapse;
+}
+.formTable td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.formTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.formTable tr:hover {background-color: #ddd;}
+
+.formTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: crimson;
+  color: white;
+}
+
+.formTable td img{
+  max-width: 128px;
+  max-height: 96px;
+}

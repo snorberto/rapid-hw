@@ -68531,3 +68531,41 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
 }
+.FormInput {
+  outline: none;
+  border: 0.5px solid lightslategray;
+  color: rgb(0, 0, 0);
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: inherit;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.formTable{
+  border-collapse: collapse;
+}
+.formTable td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.formTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.formTable tr:hover {background-color: #ddd;}
+
+.formTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: crimson;
+  color: white;
+}
+
+.formTable td img{
+  max-width: 128px;
+  max-height: 96px;
+}

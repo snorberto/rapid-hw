@@ -21,7 +21,7 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-
+    
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -30,8 +30,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
+        'is_admin',
     ];
-
+    protected $guarded = [ 'is_admin'];
     /**
      * The attributes that should be cast to native types.
      *
