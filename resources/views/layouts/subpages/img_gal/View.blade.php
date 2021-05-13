@@ -11,10 +11,12 @@
     <tr>
         <td>{{$p['title']}}</td>
         <td><img src="{{ URL::to('/') }}/images/{{ $p->image }}" class="img-thumbnail" /></td>
+        @auth
         <td>
             <a href={{"img_pictureDelete/".$p['id']}}>Delete picture</a>
             <a href="{{ route('ImageGallery.edit', $p->id) }}" class="btn btn-info">Edit Picture</a> 
-        </td>        
+        </td> 
+        @endauth       
     </tr>
     @endforeach
 </table>
